@@ -56,3 +56,7 @@ sh main.sh
 
 > [!NOTE]
 > Programmet trenger ikke admin tilgang
+
+
+## Demo
+![Showing program start](./program_start.png)
