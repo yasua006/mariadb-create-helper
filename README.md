@@ -45,7 +45,6 @@ Valgfritt (sikkere)
 sudo mysql_secure_installation
 ```
 
-sudo systemctl start mariadb
 
 ## Kjøring
 For å kjøre programmet, etter `git clone`:
