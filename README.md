@@ -1,5 +1,5 @@
 # Mariadb Create Helper
-Reduser tid brukt på legging av ny databaser og kanskje testing av tabell legging.
+Reduser tid brukt på legging og visning av både ny og eksisterende databaser og tabeller og kanskje testing av tabell legging.
 
 
 ## Kjøring Requirements

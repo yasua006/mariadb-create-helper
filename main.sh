@@ -11,7 +11,17 @@ show_all_databases() {
 
 show_specific_db_tables() {
     # 1 - database name to use
-    sudo mariadb -e "USE ${1}; SHOW TABLES"
+    sudo mariadb -D "${1}" -e "SHOW TABLES"
+}
+
+
+show_all_from_table() {
+    # 1 - database name to use
+    # 2 - table name to show
+
+    sudo mariadb -D "${1}" -e "SELECT 1 AS non_empty FROM ${2} LIMIT 1"
+
+    sudo mariadb -D "${1}" -e "SELECT * FROM ${2}"
 }
 
 
@@ -22,7 +32,9 @@ main() {
 
         echo "1a. Create a database"
         echo "1b. Create a table"
-        echo "2. Show specific database tables"
+
+        echo "2. Show all tables from specific database"
+        echo "3. Show all content from specific table"
 
         echo "99. Quit program"
 

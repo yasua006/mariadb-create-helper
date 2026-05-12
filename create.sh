@@ -8,5 +8,5 @@ create_t() {
     # 1 - database name to use
     # 2 - table name
     # 3 - content
-    sudo mariadb -e "USE ${1}; CREATE TABLE IF NOT EXISTS ${2} (${3})"
+    sudo mariadb -D "${1}" -e "CREATE TABLE IF NOT EXISTS ${2} (${3})"
 }
