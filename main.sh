@@ -5,13 +5,13 @@
 
 
 show_all_databases() {
-    mariadb -e "SHOW DATABASES"
+    sudo mariadb -e "SHOW DATABASES"
 }
 
 
 show_specific_db_tables() {
     # 1 - database name to use
-    mariadb -e "USE ${1}; SHOW TABLES"
+    sudo mariadb -e "USE ${1}; SHOW TABLES"
 }
 
 
