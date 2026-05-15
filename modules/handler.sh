@@ -18,6 +18,21 @@ handle_options() {
 
             create_t "$db_name" "$t_name" "$content"
             ;;
+        "1bb")
+            echo "Database name to use: "
+            read -r db_name
+
+            echo "Table name: "
+            read -r t_name
+
+            echo "ID column name (default: id): "
+            read -r id_name
+
+            echo "Write the other columns. Omit usage of '()': "
+            read -r content
+
+            create_primary_id_t "$db_name" "$t_name" "$id_name" "$content"
+            ;;
         "2")
             echo "Database name to show tables from: "
             read -r db_name

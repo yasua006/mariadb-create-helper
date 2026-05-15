@@ -34,10 +34,16 @@ main() {
         echo
 
         echo "1a. Create a database"
-        echo "1b. Create a table"
+
+        echo "1b. Create a table" 
+        echo "1bb. Create a table with auto primary ID"
+
+        echo
 
         echo "2. Show all tables from specific database"
         echo "3. Show all content from specific table"
+
+        echo
 
         echo "99. Quit program"
 
